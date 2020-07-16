@@ -3,24 +3,21 @@
 	let currentCardIndex = 0;
 	const [flipCard] = document.getElementsByClassName("flip-card");
 	const [innerFlipCard] = document.getElementsByClassName("flip-card-inner");
-	const studyData = [
-		["Numerator", "Top Number Of A Fraction"],
-		["Denomonator", "Bottom Number Of A Fraction"]
-	];
+
 	const order = [];
 
 	const randomIntFromInterval = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
 	function setCardData() {
-		[document.getElementById("term").innerText] = studyData[order[currentCardIndex]];
-		[, document.getElementById("definition").innerText] = studyData[order[currentCardIndex]];
+		[document.getElementById("term").innerText] = window.studyData()[order[currentCardIndex]];
+		[, document.getElementById("definition").innerText] = window.studyData()[order[currentCardIndex]];
 	}
 
 	function generateOrder() {
-		if (order.length != studyData.length) {
-			let nextNumber = randomIntFromInterval(0, studyData.length - 1);
+		if (order.length != window.studyData().length) {
+			let nextNumber = randomIntFromInterval(0, window.studyData().length - 1);
 			while (order.includes(nextNumber)) {
-				nextNumber = randomIntFromInterval(0, studyData.length - 1);
+				nextNumber = randomIntFromInterval(0, window.studyData().length - 1);
 			}
 			order.push(nextNumber);
 			generateOrder();
@@ -28,7 +25,7 @@
 	}
 
 	function nextCard() {
-		if (currentCardIndex < studyData.length - 1) {
+		if (currentCardIndex < window.studyData().length - 1) {
 			currentCardIndex++;
 			setCardData();
 		}
