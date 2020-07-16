@@ -48,7 +48,7 @@
 		});
 		generateOrder();
 		setCardData();
-		document.getElementById("forwardButton").addEventListener("click", nextCard);
-		document.getElementById("backButton").addEventListener("click", previousCard);
+		document.getElementById("forwardCat").addEventListener("click", nextCard);
+		document.getElementById("backCat").addEventListener("click", previousCard);
 	})();
 })();

@@ -21,7 +21,7 @@ function studyData() {
 		["Perpendicular Lines", "Two lines that intersect at a 90 degree angle"],
 		["Parallel Lines", "Two lines that never intersect"],
 		["Polygon", "Closed plane figure formed by three or more line segments"],
-		["You can do it!", "I beleive in you!"],
+		["You can do it!", "I believe in you!"],
 		["Chord of a circle", "Line segment with its endpoints on a circle"],
 		["Circumference of a circle", "Distance around a circle"],
 		["Diameter of a circle", "Distance across a circle going through the center"],

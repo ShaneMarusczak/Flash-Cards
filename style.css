@@ -82,23 +82,23 @@ body {
 }
 
 .btns {
-	width: 300px;
+	width: 375px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin: 40px 0;
+	margin: 35px 0;
 }
 
-.btns>div {
-	text-align: center;
-	border: 1px solid black;
-	width: 100px;
-	height: 50px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	border-radius: 7px;
+#backCat {
+	transform: scaleX(-1);
 }
 
-.btns>div:hover {
+.cat {
+	width: 175px;
+	height: 130px;
+}
+
+.cat:hover {
 	cursor: pointer;
 }
 
