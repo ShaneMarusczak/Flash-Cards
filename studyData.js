@@ -20,7 +20,7 @@ function studyData() {
 		["Hi Emma! (click)", "I Love You!"],
 		["Perpendicular Lines", "Two lines that intersect at a 90 degree angle"],
 		["Parallel Lines", "Two lines that never intersect"],
-		["Polygon", "Closed plane figure formed by three or more ling segments"],
+		["Polygon", "Closed plane figure formed by three or more line segments"],
 		["You can do it!", "I beleive in you!"],
 		["Chord of a circle", "Line segment with its endpoints on a circle"],
 		["Circumference of a circle", "Distance around a circle"],
